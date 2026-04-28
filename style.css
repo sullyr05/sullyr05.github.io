@@ -28,14 +28,29 @@ body {
 }
 
 /* Navigation */
+/* FORCE THE NAV BACKGROUND */
 nav {
-    background: rgba(15, 23, 42, 0.95);
-    padding: 1.5rem 0;
+    background-color: #0f172a !important; /* Matches your techy theme */
+    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
+/* THE LOGO FIX */
+.nav-flex img {
+    height: 120px !important; /* Increase this to 150px if still too small */
+    width: auto;
+    display: block;
+    
+    /* THE SEAMLESS TRICK: This blends the edges of the JPG */
+    mix-blend-mode: screen; 
+    
+    /* Alternative if 'screen' makes it look weird: */
+    /* filter: drop-shadow(0 0 10px #0f172a); */
+}
+
+/* Remove any old logo-placeholder or nav img code to avoid conflict */
 
 .nav-flex {
     display: flex;
