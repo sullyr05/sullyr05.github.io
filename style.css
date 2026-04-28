@@ -43,12 +43,22 @@ nav {
     align-items: center;
 }
 
-.logo-placeholder {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--accent-blue);
-    border: 2px dashed #475569;
-    padding: 5px 15px;
+/* This targets the logo specifically */
+nav img {
+    height: 80px; /* Increase this number to make the logo larger */
+    width: auto;  /* Keeps the proportions correct */
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Adds a slight "pop" when hovered */
+nav img:hover {
+    transform: scale(1.05);
+}
+
+/* Adjust the nav padding if the logo feels "cramped" */
+nav {
+    padding: 0.5rem 0; /* Reducing vertical padding gives the logo more room */
 }
 
 .nav-links {
