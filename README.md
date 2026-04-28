@@ -55,12 +55,6 @@ Simply open `index.html` in your browser.
 
 This project is deployed automatically using **GitHub Pages**:
 
-## ✏️ Customization
-
-* Email address in the contact section
-* Services offered
-
----
 
 ## 📈 Future Improvements
 
@@ -73,8 +67,6 @@ This project is deployed automatically using **GitHub Pages**:
 ---
 
 ## 📬 Contact
-
-Replace this with your info:
 
 * Email: krdevco@gmail.com
 ---
