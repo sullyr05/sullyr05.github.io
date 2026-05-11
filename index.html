@@ -27,7 +27,6 @@
             <p class="tagline">High-performance websites at a fraction of the traditional agency cost.</p>
             <div class="hero-btns">
                 <a href="#contact" class="btn-primary">Get a Quote</a>
-                <a href="#services" class="btn-secondary">View Pricing</a>
             </div>
         </div>
     </header>
@@ -71,7 +70,26 @@
     <section id="contact" class="contact">
         <div class="container text-center">
             <h2>Ready to grow your business?</h2>
-            <p>We act as your long-term technical partners. Reach out today for a free consultation.</p>
+            <p>We act as your long-term technical partners. </p>
+            <form id="contact-form" action="process.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Tell us about your business" required></textarea>
+                <button type="submit" class="btn-primary">Get a Quote</button>
+            </form>
+            
+            <div id="success-message" class="alert alert-success" style="display: none;">
+                Thank you! A quote is on the way.
+            </div>
+
+            <script>
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevents page reload
+                this.style.display = "none"; // Optional: hide the form
+                document.getElementById("success-message").style.display = "block"; // Show message
+                });
+            </script>
+
             <div class="contact-info">
                 <p><strong>Email:</strong> krdevco@gmail.com</p>
                 <p><strong>Phone:</strong> (614) 285-8494</p>
