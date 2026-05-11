@@ -30,7 +30,7 @@ body {
 /* Navigation */
 /* FORCE THE NAV BACKGROUND */
 nav {
-    background-color: #0f172a !important; /* Matches your techy theme */
+    background-color: #0f172a !important; 
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -39,7 +39,7 @@ nav {
 
 /* THE LOGO FIX */
 .nav-flex img {
-    height: 120px !important; /* Increase this to 150px if still too small */
+    height: 120px !important; 
     width: auto;
     display: block;
     
@@ -131,6 +131,16 @@ nav {
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: var(--primary-blue);
+    padding: 2rem;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.05);
 }
 
 /* Layout Grids */
