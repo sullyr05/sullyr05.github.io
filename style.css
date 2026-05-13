@@ -1,11 +1,10 @@
 /* Custom Properties for easy color changes */
 :root {
-    --primary-blue: #1e293b;
-    --accent-blue: #38bdf8;
-    --dark-bg: #0f172a;
-    --light-gray: #f8fafc;
-    --text-gray: #94a3b8;
-    --white: #ffffff;
+    --honeyBronze: #edae49;
+    --amaranth: #d1495b;
+    --teal: #00798c;
+    --balticBlue: #30638e;
+    --yaleBlue: #003d5b;
 }
 
 * {
@@ -116,8 +115,8 @@ nav {
 
 /* Buttons */
 .btn-primary {
-    background: var(--accent-blue);
-    color: var(--dark-bg);
+    background: var(--amaranth);
+    color: var(--white);
     padding: 12px 30px;
     border-radius: 5px;
     text-decoration: none;
@@ -137,7 +136,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    background: var(--dark-bg);
+    background: var(--balticBlue);
     background-color: var(--primary-blue);
     padding: 2rem;
     border-radius: 10px;
